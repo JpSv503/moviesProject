@@ -17,8 +17,13 @@ class MovieController extends Controller
     public function index()
     {
         $movies = Movie::all();
-        return view('movies-dir.index', compact('movies'));
+        return view('movies-dir.index-table', compact('movies'));
+        /** Otra vista, pero en forma de tarjetas
+         * 
+         *  return view('movies-dir.index', compact('movies'));
+         */
     }
+
 
     /**
      * Show the form for creating a new resource.
