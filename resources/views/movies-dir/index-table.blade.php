@@ -3,6 +3,7 @@
 @section('title', 'Inicio')
 
 @section('content')
+<a href="/movie/create" class="btn btn-primary">Crear Nueva Película</a>
 <br>
 <div class="row">
     @foreach($movies as $movie)
