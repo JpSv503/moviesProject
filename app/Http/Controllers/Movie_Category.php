@@ -73,7 +73,6 @@ class Movie_Category extends Controller
     {
         $category = ModelsMovie_Category::find($id);
         return view('movies-categories-dir.edit', compact('category'));
-
     }
 
     /**
@@ -106,7 +105,7 @@ class Movie_Category extends Controller
     public function destroy($id)
     {
         $category = ModelsMovie_Category::find($id);
-        $foto_url = public_path().'imgCategories'.$category->fotografia;
+        $foto_url = public_path().'/imgCategories/'.$category->fotografia;
         if(is_file($foto_url)){
             unlink($foto_url);
         }
