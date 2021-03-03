@@ -14,6 +14,7 @@
                     <th>Estreno</th>
                     <th>Duracion(Minutos)</th>
                     <th>Categoria</th>
+                    <th>Ver</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,6 +23,7 @@
                     <td>{{$movie->estreno}}</td>
                     <td>{{$movie->duracion}}</td>
                     <td>{{$movie->category_id}}</td>
+                    <td><a class="btn btn-success" href="/movie/{{$movie->id}}">Ver</a></td>
                 </tr>
             </tbody>
         </table>

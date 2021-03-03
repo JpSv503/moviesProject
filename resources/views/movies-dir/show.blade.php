@@ -17,6 +17,8 @@
         {{ method_field('DELETE') }}
             <button class="btn btn-danger">Eliminar</button>
         </form>
+        <a href="/alquiler/{{$movie->id}}" class="btn btn-success">Alquilar Película</a>
+        <a href="/compra/{{$movie->id}}" class="btn btn-success">Comprar Película</a>
     </div>
 </div>
 @endsection
